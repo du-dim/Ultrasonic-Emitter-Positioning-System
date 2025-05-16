@@ -25,7 +25,7 @@
 - меньше — выше чувствительность,
 - больше — отбрасываются слабые шумы.
 
-![Group 3 — hardware schematic](https://github.com/user-attachments/assets/0ac5f018-3be3-44b4-991f-49cb93eb6786)
+![Group 4](https://github.com/user-attachments/assets/745ceaa4-ac3a-4836-b2ce-c71d9ffe7df5)
 
 
 ---
