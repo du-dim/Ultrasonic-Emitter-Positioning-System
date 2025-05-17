@@ -259,9 +259,9 @@ uint32_t readTDC_TIME1() {
   uint32_t time1 = 0;
   digitalWrite(TDC_CS_PIN, LOW);
   SPI.transfer(0x10); // Адрес регистра TIME1
-  time1 |= (uint32_t)SPI.transfer(0x00) << 16;
-  time1 |= (uint32_t)SPI.transfer(0x00) << 8;
-  time1 |= (uint32_t)SPI.transfer(0x00);
+  time1 |= (uint32_t)SPI.transfer(0x00) << 16; // Считываем старший байт (MSB) и сдвигаем его влево на 16 бит
+  time1 |= (uint32_t)SPI.transfer(0x00) << 8;  // Считываем средний байт и сдвигаем влево на 8 бит
+  time1 |= (uint32_t)SPI.transfer(0x00);       // Считываем младший байт (LSB)
   digitalWrite(TDC_CS_PIN, HIGH);
   return time1;
 }
