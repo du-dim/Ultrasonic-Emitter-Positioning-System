@@ -248,6 +248,23 @@ Only **edges** passing through the comparator are registered. In Mode 2, TDC7200
 | 10/10    | 20–23 µs  | Likely triggered on peak — **use 2nd + 25 µs**          |
 | 10/10    | 17–20 µs  | More offset — **use 3rd + 25 µs** or choose accordingly |
 
+Below are possible comparator triggering scenarios depending on the threshold level (too high, high, medium, low).
+
+![Group 23](https://github.com/user-attachments/assets/55f28c5b-5135-430c-a096-4aa42ca89c94)
+*Fig. 2a. Comparator threshold too high*
+***
+
+![Group 24](https://github.com/user-attachments/assets/f227a732-4402-40ec-b50d-6b48f21e8dea)
+*Fig. 2b. Comparator threshold high*
+***
+
+![Group 25](https://github.com/user-attachments/assets/f3f0dbab-70a3-4a04-aa68-58ba6897076e)
+*Fig. 2c. Comparator threshold medium*
+***
+
+![Group 26](https://github.com/user-attachments/assets/8839a91a-d236-4d4c-84f2-9f9ddb96fcec)
+*Fig. 2d. Comparator threshold low*
+        
 ### 📐 4.4 Interpretation of "Too Early" Triggering
 
 If the comparator triggers on a peak instead of an edge, the timestamp is **too early**. Intervals between peaks can help detect this:
