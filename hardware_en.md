@@ -2,7 +2,7 @@
 
 🛠️ This document describes the development and implementation of the hardware components for the TDC7200-based positioning system, including the signal amplifier, comparator, ultrasonic emitter, power supply, and logic interface. It includes schematics, calculations, component choices, layout recommendations, and practical assembly notes.
 
-> 📎 **Based on the project:** [Ultrasonic Emitter Positioning System (main article)](https://github.com/du-dim/Ultrasonic-Emitter-Positioning-System/blob/main/article.md)
+> 📎 **Based on the project:** [Ultrasonic Emitter Positioning System (main article)](https://github.com/du-dim/Ultrasonic-Emitter-Positioning-System/blob/main/article_en.md)
 
 ---
 
