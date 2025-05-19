@@ -613,7 +613,7 @@ Despite possible limitations, the described architecture shows strong potential 
 
 ## Related Materials
 
-* [🛠 Hardware Implementation](https://github.com/du-dim/Ultrasonic-Emitter-Positioning-System/blob/main/hardware.md)
+* [🛠 Hardware Implementation](https://github.com/du-dim/Ultrasonic-Emitter-Positioning-System/blob/main/hardware_en.md)
 
 ---
 
