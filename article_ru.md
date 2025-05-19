@@ -243,15 +243,15 @@ void setTDCMode2() {
 
 ![Group 23](https://github.com/user-attachments/assets/55f28c5b-5135-430c-a096-4aa42ca89c94)
 *Рис. 2a. Порог срабатывания компаратора слишком высокий*
-
+***
 
 ![Group 24](https://github.com/user-attachments/assets/f227a732-4402-40ec-b50d-6b48f21e8dea)
 *Рис. 2б. Порог срабатывания компаратора высокий*
-
+***
 
 ![Group 25](https://github.com/user-attachments/assets/f3f0dbab-70a3-4a04-aa68-58ba6897076e)
 *Рис. 2в. Порог срабатывания компаратора средний*
-
+***
 
 ![Group 26](https://github.com/user-attachments/assets/8839a91a-d236-4d4c-84f2-9f9ddb96fcec)
 *Рис. 2г. Порог срабатывания компаратора низкий*
