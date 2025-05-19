@@ -636,13 +636,13 @@ Despite possible limitations, the described architecture shows strong potential 
 
 ## Author
 
-**Dzmitry Dubovik** ✍
-Nondestructive Testing Engineer
-**Date:** 17.05.2025
-**Email/contact:** \[[dzm.dubovik@gmail.com](mailto:dzm.dubovik@gmail.com)]
-**GitHub:** [@du-dim](https://github.com/du-dim)
+**Dzmitry Dubovik** ✍    
+Nondestructive Testing Engineer    
+**Date:** 17.05.2025    
+**Email/contact:** \[[dzm.dubovik@gmail.com](mailto:dzm.dubovik@gmail.com)]    
+**GitHub:** [@du-dim](https://github.com/du-dim)    
 
-*Prepared as a technical overview and personal project.*
-*Free for use in production and research tasks.*
-*Project is under development — electronics and PCB design in progress.*
+*Prepared as a technical overview and personal project.*    
+*Free for use in production and research tasks.*    
+*Project is under development — electronics and PCB design in progress.*    
 
