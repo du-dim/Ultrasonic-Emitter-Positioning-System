@@ -413,20 +413,31 @@ uint32_t readTDC_TIME1(uint8_t csPin) {
 ```cpp
 uint32_t tdc_times[6] = {0};
 
-// TDC1 (режим 2): ToF
-float LSB_ps_TDC1 = 55.0;
+// Чтение TIME1 (ToF) от TDC1 (режим 2)
 tdc_times[0] = readTDC_TIME1(TDC1_CS_PIN);
+float LSB_ps_TDC1 = 55.0; // Можно использовать фиксированное, так как режим 2
 float tof_ns = tdc_times[0] * LSB_ps_TDC1;
 
-// TDC2 (режим 1): фронты
-float LSB_ps_TDC2 = 125.0;
+// ==== TDC2: режим 1 ====
+// Калибровка
+uint32_t cal1_TDC2 = readTDC_CAL1(TDC2_CS_PIN);
+uint32_t cal2_TDC2 = readTDC_CAL2(TDC2_CS_PIN);
+float LSB_ps_TDC2 = (2.0 * 125.0) / (cal2_TDC2 - cal1_TDC2); // при 8 МГц
+
 tdc_times[1] = readTDC_TIME1(TDC2_CS_PIN);
 tdc_times[2] = readTDC_TIME2(TDC2_CS_PIN);
+float t_rise_ns = tdc_times[1] * LSB_ps_TDC2;
+float t_rise2_ns = tdc_times[2] * LSB_ps_TDC2;
 
-// TDC3 (режим 1): спады
-float LSB_ps_TDC3 = 125.0;
+// ==== TDC3: режим 1 ====
+uint32_t cal1_TDC3 = readTDC_CAL1(TDC3_CS_PIN);
+uint32_t cal2_TDC3 = readTDC_CAL2(TDC3_CS_PIN);
+float LSB_ps_TDC3 = (2.0 * 125.0) / (cal2_TDC3 - cal1_TDC3);
+
 tdc_times[3] = readTDC_TIME1(TDC3_CS_PIN);
 tdc_times[4] = readTDC_TIME2(TDC3_CS_PIN);
+float t_fall_ns = tdc_times[3] * LSB_ps_TDC3;
+float t_fall2_ns = tdc_times[4] * LSB_ps_TDC3;
 ```
 
 ### 🧠 5.3. Расчёт времени прихода
