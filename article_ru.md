@@ -381,7 +381,7 @@ t_{\text{echo}} = \frac{1}{N} \sum_{i = 1}^{N} t_{\text{echo}[i]}
 \Delta_i = \left| t_{\text{echo}[i]} - \bar{t}_{\text{echo}} \right|
 ```
 
-3. Фильтруются значения с `\Delta_i < \Delta_{\text{max}}` (например, < 50 нс)
+3. Фильтруются значения с Δᵢ < Δₘₐₓ (например, < 50 нс)
 4. Окончательное значение:
 
 ```math
